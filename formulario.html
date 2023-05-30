@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form method="post">
+      <div class="container">
+        <div class="label">
+          <label for="">Nome Completo</label>
+        </div>
+        <input class="inputGrande" type="text" name="nome" id="nome" required />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="">CPF</label>
+        </div>
+        <input class="inputGrande" type="number" name="cpf" id="cpf" required />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="">E-mail</label>
+        </div>
+        <input
+          type="email"
+          class="inputGrande"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="site">WebSite</label>
+        </div>
+        <input type="url" name="site" id="site" class="inputGrande" />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="endereco">Endereço</label>
+        </div>
+        <input
+          type="text"
+          name="endereco"
+          id="endereco"
+          required
+          class="inputGrande"
+        />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="bairro">Bairro</label>
+        </div>
+        <input
+          type="text"
+          name="bairro"
+          id="bairro"
+          required
+          class="inputPequeno"
+        />
+
+        <div class="label">
+          <label for="cidade">Cidade</label>
+        </div>
+        <input
+          type="text"
+          name="cidade"
+          id="cidade"
+          required
+          class="inputPequeno"
+        />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="cep">CEP</label>
+        </div>
+        <input
+          type="number"
+          name="cep"
+          id="cep"
+          required
+          class="inputPequeno"
+        />
+
+        <div class="label">
+          <label for="uf">UF</label>
+        </div>
+        <select name="uf" id="uf" required>
+          <option>AC</option>
+          <option>Al</option>
+          <option>AP</option>
+          <option>AM</option>
+          <option>BA</option>
+          <option>CE</option>
+          <option>DF</option>
+          <option>ES</option>
+          <option>GO</option>
+          <option>MA</option>
+          <option>MT</option>
+          <option>MS</option>
+          <option>MG</option>
+          <option>PA</option>
+          <option>PB</option>
+          <option>PR</option>
+          <option>PE</option>
+          <option>PI</option>
+          <option>RJ</option>
+          <option>RN</option>
+          <option>RS</option>
+          <option>RO</option>
+          <option>RR</option>
+          <option>SC</option>
+          <option>SP</option>
+          <option>SE</option>
+          <option>TO</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="tel">Telefone</label>
+        </div>
+        <input type="tel" name="tel" id="tel" class="inputPequeno" />
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="nascimento">Data Nascimento</label>
+        </div>
+        <input
+          type="date"
+          name="nascimento"
+          id="nascimento"
+          required
+          class="inputPequeno"
+        />
+
+        <div class="label">
+          <label for="sexo">Sexo</label>
+        </div>
+        <input type="radio" name="sexo" id="sexo" />M
+        <input type="radio" name="sexo" id="sexo" />F
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="cel">Celular</label>
+        </div>
+        <input type="tel" name="cel" id="cel" required class="inputPequeno" />
+
+        <div class="label">
+          <label for="estadoCivil">Estado Civil</label>
+        </div>
+        <select name="estadoCivil" id="estadoCivil">
+          <option>Solteiro(a)</option>
+          <option>Casado(a)</option>
+          <option>Viuvo(a)</option>
+          <option>Divorciado(a)</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <div class="label">
+          <label for="login">Login</label>
+        </div>
+        <input type="text" name="login" id="login" class="inputPequeno" />
+
+        <div class="label">
+          <label for="senha">Senha</label>
+        </div>
+        <input type="password" name="senha" id="senha" class="inputPequeno" />
+      </div>
+
+      <div class="assuntos">
+        <div>
+          <label
+            >Deseja receber informações sobre os seguintes assuntos
+            abaixo:</label
+          >
+        </div>
+        <br />
+        <div>
+          <div>
+            <input type="checkbox" name="" id="tec" />Tecnologia
+            <input type="checkbox" name="" id="esp" />Esportes
+            <input type="checkbox" name="" id="aut" />Automóveis
+            <input type="checkbox" name="" id="com" />Culinária
+            <input type="checkbox" name="" id="pol" />Política
+            <input type="checkbox" name="" id="cop" />Policial
+            <input type="checkbox" name="" id="tem" />Tempo
+          </div>
+          <div>
+            <input type="checkbox" name="" id="cul" />Cultura
+            <input type="checkbox" name="" id="eco" />Economia
+            <input type="checkbox" name="" id="jog" />Jogos
+            <input type="checkbox" name="" id="edu" />Educação
+            <input type="checkbox" name="" id="via" />Viagem
+            <input type="checkbox" name="" id="emp" />Empregos
+            <input type="checkbox" name="" id="me" />Moda e Estilo
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="submit">
+        <input type="checkbox" name="regras" id="regras" />Li as regras de
+        cadastro e autorizo a criação do usuário
+        <br />
+        <br />
+        <button id="confirmar" type="submit">Confirmar</button>
+        <button id="retornar" type="button">Retornar</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -9,177 +9,195 @@
   </head>
   <body>
     <form method="post">
-      <div class="container">
-        <div class="label">
-          <label for="">Nome Completo</label>
+      <fieldset>
+        <div class="container">
+          <div class="label">
+            <label for="">Nome Completo</label>
+          </div>
+          <input
+            class="inputGrande"
+            type="text"
+            name="nome"
+            id="nome"
+            required
+          />
         </div>
-        <input class="inputGrande" type="text" name="nome" id="nome" required />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="">CPF</label>
+        <div class="container">
+          <div class="label">
+            <label for="">CPF</label>
+          </div>
+          <input
+            class="inputGrande"
+            type="number"
+            name="cpf"
+            id="cpf"
+            required
+          />
         </div>
-        <input class="inputGrande" type="number" name="cpf" id="cpf" required />
-      </div>
+      </fieldset>
 
-      <div class="container">
-        <div class="label">
-          <label for="">E-mail</label>
+      <fieldset>
+        <div class="container">
+          <div class="label">
+            <label for="">E-mail</label>
+          </div>
+          <input
+            type="email"
+            class="inputGrande"
+            name="email"
+            id="email"
+            required
+          />
         </div>
-        <input
-          type="email"
-          class="inputGrande"
-          name="email"
-          id="email"
-          required
-        />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="site">WebSite</label>
+        <div class="container">
+          <div class="label">
+            <label for="site">WebSite</label>
+          </div>
+          <input type="url" name="site" id="site" class="inputGrande" />
         </div>
-        <input type="url" name="site" id="site" class="inputGrande" />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="endereco">Endereço</label>
+        <div class="container">
+          <div class="label">
+            <label for="endereco">Endereço</label>
+          </div>
+          <input
+            type="text"
+            name="endereco"
+            id="endereco"
+            required
+            class="inputGrande"
+          />
         </div>
-        <input
-          type="text"
-          name="endereco"
-          id="endereco"
-          required
-          class="inputGrande"
-        />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="bairro">Bairro</label>
-        </div>
-        <input
-          type="text"
-          name="bairro"
-          id="bairro"
-          required
-          class="inputPequeno"
-        />
+        <div class="container">
+          <div class="label">
+            <label for="bairro">Bairro</label>
+          </div>
+          <input
+            type="text"
+            name="bairro"
+            id="bairro"
+            required
+            class="inputPequeno"
+          />
 
-        <div class="label">
-          <label for="cidade">Cidade</label>
+          <div class="label">
+            <label for="cidade">Cidade</label>
+          </div>
+          <input
+            type="text"
+            name="cidade"
+            id="cidade"
+            required
+            class="inputPequeno"
+          />
         </div>
-        <input
-          type="text"
-          name="cidade"
-          id="cidade"
-          required
-          class="inputPequeno"
-        />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="cep">CEP</label>
-        </div>
-        <input
-          type="number"
-          name="cep"
-          id="cep"
-          required
-          class="inputPequeno"
-        />
+        <div class="container">
+          <div class="label">
+            <label for="cep">CEP</label>
+          </div>
+          <input
+            type="number"
+            name="cep"
+            id="cep"
+            required
+            class="inputPequeno"
+          />
 
-        <div class="label">
-          <label for="uf">UF</label>
+          <div class="label">
+            <label for="uf">UF</label>
+          </div>
+          <select name="uf" id="uf" required>
+            <option>AC</option>
+            <option>Al</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
         </div>
-        <select name="uf" id="uf" required>
-          <option>AC</option>
-          <option>Al</option>
-          <option>AP</option>
-          <option>AM</option>
-          <option>BA</option>
-          <option>CE</option>
-          <option>DF</option>
-          <option>ES</option>
-          <option>GO</option>
-          <option>MA</option>
-          <option>MT</option>
-          <option>MS</option>
-          <option>MG</option>
-          <option>PA</option>
-          <option>PB</option>
-          <option>PR</option>
-          <option>PE</option>
-          <option>PI</option>
-          <option>RJ</option>
-          <option>RN</option>
-          <option>RS</option>
-          <option>RO</option>
-          <option>RR</option>
-          <option>SC</option>
-          <option>SP</option>
-          <option>SE</option>
-          <option>TO</option>
-        </select>
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="tel">Telefone</label>
+        <div class="container">
+          <div class="label">
+            <label for="tel">Telefone</label>
+          </div>
+          <input type="tel" name="tel" id="tel" class="inputPequeno" />
         </div>
-        <input type="tel" name="tel" id="tel" class="inputPequeno" />
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="nascimento">Data Nascimento</label>
-        </div>
-        <input
-          type="date"
-          name="nascimento"
-          id="nascimento"
-          required
-          class="inputPequeno"
-        />
+        <div class="container">
+          <div class="label">
+            <label for="nascimento">Data Nascimento</label>
+          </div>
+          <input
+            type="date"
+            name="nascimento"
+            id="nascimento"
+            required
+            class="inputPequeno"
+          />
 
-        <div class="label">
-          <label for="sexo">Sexo</label>
+          <div class="label">
+            <label for="sexo">Sexo</label>
+          </div>
+          <input type="radio" name="sexo" id="sexo" />M
+          <input type="radio" name="sexo" id="sexo" />F
         </div>
-        <input type="radio" name="sexo" id="sexo" />M
-        <input type="radio" name="sexo" id="sexo" />F
-      </div>
 
-      <div class="container">
-        <div class="label">
-          <label for="cel">Celular</label>
-        </div>
-        <input type="tel" name="cel" id="cel" required class="inputPequeno" />
+        <div class="container">
+          <div class="label">
+            <label for="cel">Celular</label>
+          </div>
+          <input type="tel" name="cel" id="cel" required class="inputPequeno" />
 
-        <div class="label">
-          <label for="estadoCivil">Estado Civil</label>
+          <div class="label">
+            <label for="estadoCivil">Estado Civil</label>
+          </div>
+          <select name="estadoCivil" id="estadoCivil">
+            <option>Solteiro(a)</option>
+            <option>Casado(a)</option>
+            <option>Viuvo(a)</option>
+            <option>Divorciado(a)</option>
+          </select>
         </div>
-        <select name="estadoCivil" id="estadoCivil">
-          <option>Solteiro(a)</option>
-          <option>Casado(a)</option>
-          <option>Viuvo(a)</option>
-          <option>Divorciado(a)</option>
-        </select>
-      </div>
+      </fieldset>
 
-      <div class="container">
-        <div class="label">
-          <label for="login">Login</label>
-        </div>
-        <input type="text" name="login" id="login" class="inputPequeno" />
+      <fieldset>
+        <div class="container">
+          <div class="label">
+            <label for="login">Login</label>
+          </div>
+          <input type="text" name="login" id="login" class="inputPequeno" />
 
-        <div class="label">
-          <label for="senha">Senha</label>
+          <div class="label">
+            <label for="senha">Senha</label>
+          </div>
+          <input type="password" name="senha" id="senha" class="inputPequeno" />
         </div>
-        <input type="password" name="senha" id="senha" class="inputPequeno" />
-      </div>
+      </fieldset>
 
       <div class="assuntos">
         <div>
